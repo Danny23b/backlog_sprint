@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="escuela.css">
+    <title>Sistema Educativo</title>
+</head>
+<body>
+
+    <!-- Contenedor para recursos educativos -->
+    <div id="recursos-container">
+        <h2>Recursos Educativos</h2>
+        <select id="nivelSelector">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="universidad">Universidad</option>
+        </select>
+        <button onclick="cargarRecursos()">Cargar Recursos</button>
+        <ul id="listaRecursos"></ul>
+    </div>
+
+    <!-- Contenedor para cargar y compartir material educativo -->
+    <div id="material-container">
+        <h2>Cargar Material Educativo</h2>
+        <textarea id="materialInput" placeholder="Ingrese el material educativo"></textarea>
+        <button onclick="compartirMaterial()">Compartir con Alumnos</button>
+    </div>
+
+    <!-- Contenedor para recibir actualizaciones -->
+    <div id="actualizaciones-container">
+        <h2>Actualizaciones para Padres</h2>
+        <p id="actualizacionesTexto"></p>
+    </div>
+
+    <script src="escuela.js"></script>
+</body>
+</html>
+
